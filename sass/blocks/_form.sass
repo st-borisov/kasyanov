@@ -1,0 +1,104 @@
+.form
+	margin: 0 1.5rem
+	border-radius: 1.5rem
+	&__block
+		padding: 7.5rem
+		background: rgba(29, 29, 27, 0.8)
+		backdrop-filter: blur(1.25rem)
+		border-radius: 1.5rem
+	&__text
+		color: #D2D9DB
+		max-width: 30.125rem
+	&__forma
+		max-width: 34.75rem
+		width: 100%
+		& .input-group
+			margin-bottom: 1.5rem
+			&:last-child
+				margin: 0
+	&__bottom
+		gap: 1rem
+	&__policy
+		& .ui-checkboxradio-label
+			padding: 0
+			background: none
+			border: none
+			color: rgba(255, 255, 255, 0.5)
+			font-size: .875rem
+			letter-spacing: 0.02em
+			display: flex
+			gap: .5rem
+			text-align: left
+			transition: 0.3s ease
+			+light
+			&:hover
+				color: #fff
+				& .ui-checkboxradio-icon
+					border: .0625rem solid #fff
+			&.ui-state-active
+				border: none
+				background: none
+				color: #fff
+				+light
+				& .ui-checkboxradio-icon
+					border: .0625rem solid var(--accent)
+					background-color: var(--accent)
+					background-image: url(../img/interface/checkbox-icon.svg)
+					background-repeat: no-repeat
+					background-size: 100%
+					background-position: center
+		& .ui-checkboxradio-icon
+			transition: 0.3s ease
+			margin: 0
+			border-radius: 0
+			border: .0625rem solid rgba(255, 255, 255, 0.5)
+			box-shadow: none
+			background: transparent
+			min-width: 1.125rem
+			width: 1.125rem
+			height: 1.125rem
+
+.services-page, .investors-page, .about-page, .building-card-page, .object-card-page
+	.form
+		margin-bottom: 1.5rem
+
+.object-card-page
+	.form
+		& .textarea
+			height: 7.625rem
+		&__forma
+			max-width: 100%
+			display: grid
+			grid-template-columns: repeat(2, 26.625rem)
+			gap: 3rem
+
+@media screen and ( max-width: 992px )
+	.form
+		&__block
+			padding: 4rem
+
+	.object-card-page
+		.form
+			&__forma
+				grid-template-columns: repeat(1, 1fr)
+				gap: 1.5rem
+
+@media screen and ( max-width: 576px )
+	.form
+		margin: 0 1rem
+		&__block
+			padding: 4rem 1.5rem
+		&__forma
+			& .input-group
+				margin-bottom: 1rem
+	.object-card-page
+		.form
+			& .textarea
+				height: 7.5rem
+				border-radius: 1rem
+			&__forma
+				gap: 1rem
+
+	.services-page, .investors-page, .about-page, .building-card-page, .object-card-page
+		.form
+			margin-bottom: 1rem

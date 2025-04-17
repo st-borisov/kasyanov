@@ -1,0 +1,284 @@
+.news-article
+	padding: 7.5rem 0 7.5rem
+	&__breadcrumb
+		margin: auto
+		max-width: 61.375rem
+		width: 100%
+		margin-bottom: 3rem
+		ol
+			justify-content: center
+			align-items: center
+			row-gap: .25rem
+	h1
+		margin: auto
+		text-align: center
+		margin-bottom: 3rem
+		max-width: 61.375rem
+		width: 100%
+	&__date
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0 1rem
+		margin-bottom: 3rem
+		border-radius: .75rem
+		background: #E7EAEB
+		text-transform: uppercase
+		height: 2.375rem
+	&__date-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+	&__image
+		width: 100%
+		height: 51.375rem
+		margin-bottom: 7.5rem
+		.box
+			width: 100%
+			height: 100%
+			border-radius: 1.5rem
+			overflow: hidden
+	&__content
+		margin: auto
+		max-width: 61.375rem
+		width: 100%
+		h2
+			font-size: 3rem
+			line-height: 3rem
+			margin-bottom: 3rem
+		p
+			margin: 3rem 0
+			font-size: 2rem
+			line-height: 2.25rem
+			+light
+			&:last-child
+				margin-bottom: 0
+		h3
+			font-size: 2rem
+			line-height: 2rem
+			margin: 3rem 0 1.5rem
+		.small-text
+			font-size: 1.125rem
+			line-height: 1.375rem
+			margin-top: 1.5rem
+
+	&-slider-block
+		position: relative
+		width: 100%
+		margin: 3rem 0
+	&-arrow-prev
+		position: absolute
+		top: 0
+		bottom: 0
+		margin: auto
+		left: -2.625rem
+		z-index: 1000
+		width: 5.25rem
+		height: 5.25rem
+		background: #1D1D1B
+		svg
+			width: 3.875rem
+			height: 3.875rem
+			path
+				fill: #FFFFFF
+	&-arrow-next
+		position: absolute
+		top: 0
+		bottom: 0
+		margin: auto
+		right: -2.625rem
+		z-index: 1000
+		width: 5.25rem
+		height: 5.25rem
+		background: #1D1D1B
+		svg
+			width: 3.875rem
+			height: 3.875rem
+			path
+				fill: #FFFFFF
+	&__slider-image
+		width: 100%
+		height: 40rem
+		img
+			width: 100%
+			height: 100%
+	&__content-image
+		width: 100%
+		height: 40rem
+		margin: 3rem 0
+		.box
+			width: 100%
+			height: 100%
+			overflow: hidden
+			border-radius: 1.5rem
+	&__video
+		position: relative
+		display: flex
+		height: 40rem
+	&__box
+		width: 100%
+		height: 100%
+		border-radius: 1.5rem
+	&__play
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 5.3125rem
+		height: 5.3125rem
+		border-radius: 100%
+		margin: auto
+		right: 0
+		left: 0
+		top: 0
+		bottom: 0
+		background: #1D1D1B
+		cursor: pointer
+		svg
+			width: 4.5rem
+			height: 4.5rem
+	&-note
+		background: #FFFFFF
+		border: .0625rem solid #D2D9DB
+		border-radius: 1.5rem
+		&__block
+			display: flex
+			justify-content: space-between
+			padding: 3rem
+		&__left
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			width: 43rem
+			.text
+				font-size: 2rem
+				line-height: 2.25rem
+				margin: 0
+				margin-bottom: 1.5rem
+			.name
+				font-size: 1.125rem
+				line-height: 1.375rem
+				color: #FC744B
+				margin: 0
+		&__right
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			.icon
+				width: 10.0625rem
+				height: 7.75rem
+				svg
+					width: 100%
+					height: 100%
+
+@media screen and ( max-width: 992px )
+	.news-article
+		padding: 6.25rem 0 6.25rem
+		&__breadcrumb
+			max-width: 100%
+			margin-bottom: 3rem
+		h1
+			font-size: 3rem
+			margin-bottom: 3rem
+			max-width: 100%
+		&__image
+			width: 100%
+			height: 25rem
+			margin-bottom: 4rem
+			.box
+				border-radius: 1.5rem
+		&-note
+			border-radius: 1.5rem
+			&__block
+				padding: 2rem
+			&__left
+				width: 25rem
+				.text
+					font-size: 1.5rem
+					line-height: 1.625rem
+					margin-bottom: .5rem
+				.name
+					font-size: 1.125rem
+					line-height: 1.375rem
+					color: #FC744B
+					margin: 0
+			&__right
+				.icon
+					width: 5rem
+					height: 3.8125rem
+		&__content
+			max-width: 100%
+			h2
+				font-size: 2.5rem
+				line-height: 2.5rem
+				margin-bottom: 1.5rem
+			p
+				margin: 1.5rem 0
+				font-size: 1.5rem
+				line-height: 1.625rem
+				&:last-child
+					margin-bottom: 0
+			h3
+				font-size: 2rem
+				line-height: 2rem
+				margin: 1.5rem auto
+			.small-text
+				margin: 1.5rem 0
+
+		&-slider-block
+			position: relative
+			width: 100%
+			margin: 1.5rem 0
+			padding-bottom: 6.75rem
+		&-arrow-prev
+			top: auto
+			left: 0
+		&-arrow-next
+			top: auto
+			right: 0
+		&__slider-image
+			width: 100%
+			height: 25rem
+		&__content-image
+			width: 100%
+			height: 25rem
+			margin: 1.5rem 0
+			.box
+				width: 100%
+				height: 100%
+				overflow: hidden
+				border-radius: 1.5rem
+		&__video
+			height: 25rem
+		&__box
+			border-radius: 1.5rem
+
+@media screen and ( max-width: 576px )
+	.news-article
+		padding: 4rem 0 4rem
+		&__breadcrumb
+			max-width: 100%
+			margin-bottom: 1.5rem
+		h1
+			font-size: 3rem
+			margin-bottom: 1.5rem
+			max-width: 100%
+		&__date
+			margin-bottom: 1.5rem
+		&__image
+			height: 18.5625rem
+			margin-bottom: 4rem
+			.box
+				border-radius: .5625rem
+		&-note
+			&__left
+				width: 17rem
+		&__content
+			max-width: 100%
+		&__slider-image
+			height: 17.5rem
+		&__content-image
+			height: 17.5rem
+		&__video
+			height: 17.5rem
+		&__box
+			border-radius: 1.5rem
