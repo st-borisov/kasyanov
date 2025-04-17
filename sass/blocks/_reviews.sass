@@ -1,0 +1,33 @@
+.reviews
+	background-color: #fff
+	&__slider
+		width: 95.9375rem
+		& .slick-track
+			display: flex
+			margin-left: -1.5rem
+		& .slick-slide
+			margin: 0 1.5rem
+	&__box
+		height: 18.75rem
+		width: 100%
+		border-radius: 1.5rem
+	&__play
+		border-radius: 50%
+		background-color: var(--text)
+		width: 5.3125rem
+		height: 5.3125rem
+		right: 0
+		left: 0
+		top: 0
+		bottom: 0
+		margin: auto
+		cursor: pointer
+		+center
+		svg
+			width: 4.5rem
+			height: 4.5rem
+
+@media screen and ( max-width: 576px )
+	.reviews
+		&__slider
+			width: 31rem

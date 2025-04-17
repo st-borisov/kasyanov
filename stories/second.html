@@ -1,0 +1,25 @@
+<html>
+
+<head>
+	<title>Second story!</title>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+</head>
+
+<body>
+	<amp-story standalone title="Hello Story" publisher="The AMP Team"
+		publisher-logo-src="https://example.com/logo/1x1.png"
+		poster-portrait-src="https://example.com/my-story/poster/3x4.jpg">
+		<amp-story-page id="page-1" auto-advance-after="rain-video">
+			<amp-story-grid-layer template="fill" preset="2021-background">
+				<amp-video autoplay id="rain-video" src="../video/video.mp4" layout="fill" alt="">
+				</amp-video>
+			</amp-story-grid-layer>
+			<amp-story-grid-layer template="vertical">
+				<h1 style="font-family: roboto; color: white">Hello, video-story!</h1>
+			</amp-story-grid-layer>
+		</amp-story-page>
+	</amp-story>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.building-card-gallery
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 3rem
+
+	.slider-container
+		padding-left: 13.5rem
+	& .slick-track
+		margin-left: -1.5rem
+	& .slick-slide
+		margin: 0 1.5rem
+	&__box
+		width: 100%
+		height: 40rem
+		border-radius: 1.5rem
+	&__slider
+		width: 131rem
+	&__video
+		position: relative
+		border-radius: 1.5rem
+		overflow: hidden
+		cursor: pointer
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			right: 0
+			left: 0
+			bottom: 0
+			top: 0
+			margin: auto
+			background: rgba(255, 255, 255, 0.3)
+			cursor: pointer
+	&__play
+		position: absolute
+		margin: auto
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		z-index: 1000
+		width: 5.3125rem
+		height: 5.3125rem
+		border-radius: 100%
+		background: #1D1D1B
+		cursor: pointer
+
+@media screen and ( max-width: 992px )
+	.building-card-gallery
+		&__header
+			margin-bottom: 1.5rem
+		.slider-container
+			padding-left: 1.5rem
+		& .slick-track
+			margin-left: -0.5rem
+		& .slick-slide
+			margin: 0 .5rem
+		&__box
+			width: 100%
+			height: 25rem
+		&__slider
+			width: 56.25rem
+		.slick-arrow-one
+			width: 3.25rem
+			height: 3.25rem
+			svg
+				width: 2rem
+				height: 2rem
+
+@media screen and ( max-width: 576px )
+	.building-card-gallery
+		.slider-container
+			padding-left: 1rem
+		&__header
+			align-items: flex-end
+		&__box
+			width: 100%
+			height: 15rem
+		&__slider
+			width: 48.3125rem
+		.slick-arrow-one
+			width: 3.25rem
+			height: 3.25rem
+			svg
+				width: 2rem
+				height: 2rem

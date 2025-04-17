@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-story-player" src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js"></script>
+	<link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<button class="btn-1 team__btn mt-sm-4" data-bs-toggle="modal" data-bs-target="#modal-consult">консультация
+		со специалистом</button>
+
+	<button class="btn-1 team__btn mt-sm-4" data-bs-toggle="modal" data-bs-target="#modal-call">заказать
+		звонок</button>
+
+	<button class="btn-1 team__btn mt-sm-4" data-bs-toggle="modal" data-bs-target="#modal-promotion">успейте
+		купить</button>
+
+	<!-- модальное окно (консультация специалиста) -->
+	<div class="modal modal-consult fade" id="modal-consult" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal__top">
+					<div class="modal__group d-flex justify-content-between">
+						<p class="name">Хотите получить консультацию
+							нашего специалиста?</p>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					</div>
+					<div class="modal__text mt-2">
+						<p>Чтобы получить подробную консультацию, оставьте свои контактные данные, и наш менеджер вскоре свяжется
+							с
+							Вами, чтобы ответить на все вопросы</p>
+					</div>
+				</div>
+				<div class="modal__form">
+					<div class="form__inputs">
+						<div class="input-group">
+							<input type="text" class="form-control input form__input" placeholder="Имя" aria-label="Имя"
+								aria-describedby="">
+						</div>
+						<div class="input-group">
+							<input type="tel" name="phone" class="form-control input form__input" placeholder="Телефон"
+								aria-label="Телефон" aria-describedby="">
+						</div>
+						<div class="input-group">
+							<input type="email" class="form-control input form__input" placeholder="Электронная почта"
+								aria-label="Электронная почта" aria-describedby="">
+						</div>
+					</div>
+					<div class="form__bottom mt-3">
+						<div class="form__policy">
+							<label for="checkbox-policy-modal">Нажимая на кнопку, Вы соглашаетесь с условиями обработки персональных
+								данных</label>
+							<input type="checkbox" name="checkbox-policy" id="checkbox-policy-modal" class="checkbox-policy">
+						</div>
+						<button class="btn-2 form__btn mt-3">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- модальное окно (заказать звонок) -->
+	<div class="modal modal-consult fade" id="modal-call" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal__top">
+					<div class="modal__group d-flex justify-content-between">
+						<p class="name">Заказать обратный звонок</p>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					</div>
+					<div class="modal__text mt-2">
+						<p>Чтобы получить подробную консультацию, оставьте свои контактные данные, и наш менеджер вскоре свяжется
+							с
+							Вами, чтобы ответить на все вопросы</p>
+					</div>
+				</div>
+				<div class="modal__form">
+					<div class="form__inputs">
+						<div class="input-group">
+							<input type="text" class="form-control input form__input" placeholder="Имя" aria-label="Имя"
+								aria-describedby="">
+						</div>
+						<div class="input-group">
+							<input type="tel" name="phone" class="form-control input form__input" placeholder="Телефон"
+								aria-label="Телефон" aria-describedby="">
+						</div>
+					</div>
+					<div class="form__bottom mt-3">
+						<div class="form__policy">
+							<label for="checkbox-policy-modal-call">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
+								персональных
+								данных</label>
+							<input type="checkbox" name="checkbox-policy" id="checkbox-policy-modal-call" class="checkbox-policy">
+						</div>
+						<button class="btn-2 form__btn mt-3">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Модальное окно "Успейте купить" -->
+	<div class="modal modal-promotion fade" id="modal-promotion" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal__top">
+					<div class="modal__group d-flex justify-content-between">
+						<p class="section-title">Снижение цены на объект
+							в БЦ "Касьянов"</p>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					</div>
+				</div>
+				<div class="modal-promotion__content d-flex align-items-center mt-4 flex-lg-row flex-column-reverse">
+					<div class="modal__form">
+						<div class="modal-promotion__text">
+							<p>Предложение действует <span>до 31 декабря 2025 года</span></p>
+							<p>Подробности у наших менеджеров</p>
+						</div>
+						<div class="form__inputs">
+							<div class="input-group">
+								<input type="text" class="form-control input form__input" placeholder="Имя" aria-label="Имя"
+									aria-describedby="">
+							</div>
+							<div class="input-group">
+								<input type="tel" name="phone" class="form-control input form__input" placeholder="Телефон"
+									aria-label="Телефон" aria-describedby="">
+							</div>
+						</div>
+						<div class="form__bottom mt-3 d-flex align-items-sm-center justify-content-between flex-sm-row flex-column">
+							<div class="form__policy">
+								<label for="checkbox-policy-modal-promotion">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
+									персональных
+									данных</label>
+								<input type="checkbox" name="checkbox-policy" id="checkbox-policy-modal-promotion"
+									class="checkbox-policy">
+							</div>
+							<button class="btn-2 form__btn">Отправить</button>
+						</div>
+					</div>
+					<div class="card-room">
+						<a href="#" class="card-room__link"></a>
+						<div class="card-room__image">
+							<div class="card-room__box box">
+								<img src="img/objects/image-2.jpg" alt="фото">
+							</div>
+							<div class="card-room__benefits d-flex flex-wrap">
+								<div class="card-room__benefit benefit orange">
+									<span>преимущество</span>
+								</div>
+								<div class="card-room__benefit benefit gray">
+									<span>преимущество</span>
+								</div>
+							</div>
+							<button class="card-room__favorite favorite-btn">
+								<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_13028_8563)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M4 12.7598C3.99911 13.6469 4.16267 14.5273 4.49067 15.4011C4.81867 16.2749 5.39467 17.2527 6.21867 18.3344C7.04267 19.4162 8.16623 20.6651 9.58934 22.0811C11.0133 23.4962 12.8133 25.1975 14.9893 27.1851L16 28.0984L17.0093 27.1851C19.2031 25.1975 21.0076 23.4962 22.4227 22.0811C23.8378 20.6651 24.9573 19.4167 25.7813 18.3358C26.6053 17.2549 27.1813 16.2762 27.5093 15.3998C27.8364 14.5251 28 13.6451 28 12.7598C28 11.0638 27.424 9.63977 26.272 8.48777C25.12 7.33577 23.696 6.75977 22 6.75977C20.8267 6.75977 19.7267 7.05977 18.7 7.65977C17.9957 8.07138 17.351 8.61144 16.7659 9.27992C16.4981 9.58586 16.2428 9.91869 16 10.2784C15.7572 9.91869 15.5019 9.58586 15.2341 9.27992C14.649 8.61144 14.0043 8.07138 13.3 7.65977C12.2733 7.05977 11.1733 6.75977 10 6.75977C8.304 6.75977 6.88 7.33577 5.728 8.48777C4.576 9.63977 4 11.0638 4 12.7598ZM21.5741 21.2326C21.5741 21.2327 21.574 21.2327 21.5739 21.2328C20.1776 22.6291 18.3889 24.316 16.2036 26.2958L15.9995 26.4805L15.7986 26.2991C15.7979 26.2984 15.7971 26.2977 15.7964 26.297C13.6289 24.3172 11.8431 22.629 10.4357 21.2304C9.03504 19.8367 7.95249 18.6303 7.17328 17.6073C6.39087 16.5801 5.88694 15.7061 5.61412 14.9794C5.33421 14.2337 5.19927 13.4962 5.2 12.761V12.7598C5.2 11.3675 5.65967 10.2532 6.57653 9.33629C7.4934 8.41943 8.6077 7.95977 10 7.95977C10.9576 7.95977 11.849 8.20166 12.6945 8.69581C13.5424 9.19133 14.3164 9.92904 15.0054 10.9498L16 12.4234L16.9946 10.9498C17.6836 9.92904 18.4576 9.19133 19.3055 8.69581C20.151 8.20166 21.0425 7.95977 22 7.95977C23.3923 7.95977 24.5066 8.41943 25.4235 9.33629C26.3403 10.2532 26.8 11.3675 26.8 12.7598C26.8 13.4937 26.665 14.2316 26.3855 14.9792C26.1127 15.7081 25.6089 16.5826 24.827 17.6083C24.0468 18.6317 22.9672 19.8386 21.5741 21.2326Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_13028_8563">
+											<rect width="32" height="32" fill="white" transform="translate(0 0.893555)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</button>
+							<div class="card-room__arrow link-arrow-light">
+								<div class="box">
+									<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_13028_8553)">
+											<path
+												d="M28.2538 18.5824L17.3426 29.4936C17.2087 29.6274 17.0516 29.6947 16.8712 29.6953C16.6908 29.6959 16.5337 29.6287 16.3998 29.4936C16.2659 29.3584 16.1987 29.2013 16.1981 29.0221C16.1974 28.843 16.2647 28.6859 16.3998 28.5507L27.3109 17.6396L20.2691 17.6406C20.0849 17.6399 19.9287 17.5793 19.8005 17.4586C19.6723 17.3379 19.606 17.1761 19.6016 16.973C19.6016 16.7644 19.661 16.5994 19.7798 16.4781C19.8986 16.3568 20.0617 16.2955 20.2691 16.2942L28.5338 16.2942C28.6972 16.2942 28.8386 16.3206 28.958 16.3734C29.0775 16.4262 29.1878 16.5032 29.289 16.6044C29.3902 16.7056 29.4671 16.8159 29.5199 16.9353C29.5727 17.0548 29.5995 17.1965 29.6001 17.3605L29.5991 25.6243C29.5991 25.8078 29.5382 25.9649 29.4162 26.0957C29.2943 26.2264 29.129 26.2918 28.9203 26.2918C28.716 26.2886 28.5539 26.2283 28.4338 26.1108C28.3138 25.9932 28.2534 25.8311 28.2528 25.6243L28.2538 18.5824Z"
+												fill="#1D1D1B" />
+										</g>
+										<defs>
+											<clipPath id="clip0_13028_8553">
+												<rect width="32" height="32" fill="white" transform="translate(0.37207 22.8936) rotate(-45)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="card-room__content">
+							<div class="card-room__info">
+								<div class="card-room__group d-flex justify-content-between align-items-center mb-1">
+									<p class="card-name">Кабинет №624</p>
+									<p class="card-room__size">14,9 м<sup>2</sup></p>
+								</div>
+								<ul>
+									<li>
+										<p>Объект:</p>
+										<a href="#">Касьянов</a>
+									</li>
+									<li>
+										<p>Этаж:</p>
+										<span>6</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

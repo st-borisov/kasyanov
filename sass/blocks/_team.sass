@@ -1,0 +1,97 @@
+.team
+	&__slider
+		//width: 128rem
+		width: 126.5rem
+		& .slick-track
+			display: flex
+			//margin-left: -1.5rem
+			margin-left: -0.75rem
+		& .slick-slide
+			//margin: 0 1.5rem
+			margin: 0 .75rem
+	&__slide
+		background-color: #E7EAEB
+		border-radius: 1.5rem
+	&__image
+		width: 100%
+		height: 30.4375rem
+		//height: 39.4375rem
+		border-radius: 1.5rem
+	&__work
+		color: rgba(29, 29, 27, 0.4)
+		letter-spacing: 0.02em
+		line-height: 1.1
+		+bold
+	&__wrap
+		& .container
+			max-width: 100%
+			padding-left: 13.5rem
+			padding-right: 0
+	&__btn
+		letter-spacing: 0.03em
+	&__group
+		ul
+			font-size: 1rem
+			padding-left: .75rem
+			li
+				color: rgba(29, 29, 27, 0.4)
+				position: relative
+				padding-left: 1rem
+				&::before
+					content: ''
+					width: .3125rem
+					height: .3125rem
+					border-radius: 50%
+					background-color: rgba(29, 29, 27, 0.4)
+					position: absolute
+					left: 0
+					top: .5625rem
+	&__info
+		display: none
+		&.active
+			display: block
+
+@media screen and ( max-width: 992px )
+	.team
+		&__image
+			height: 37.5rem
+		&__wrap
+			& .container
+				padding-left: 1.5rem
+		&__slider
+			width: 57.75rem
+			& .slick-track
+				display: flex
+				margin-left: -0.75rem
+			& .slick-slide
+				margin: 0 .75rem
+
+@media screen and ( max-width: 576px )
+	.team
+		&__wrap
+			& .container
+				padding-left: 1rem
+		&__slider
+			width: 38.625rem
+			& .slick-track
+				display: flex
+				margin-left: -0.5rem
+			& .slick-slide
+				margin: 0 .5rem
+		&__image
+			height: 24.25rem
+		&__work
+			+reg
+		&__group
+			margin-top: .75rem
+			ul
+				padding-left: .5rem
+				li
+					font-size: .625rem
+					padding-left: .5rem
+					&::before
+						width: .125rem
+						height: .125rem
+						top: .375rem
+		&__btn
+			margin-top: .75rem

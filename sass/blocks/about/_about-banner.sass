@@ -1,0 +1,32 @@
+.about-banner
+	&__block
+		background-color: var(--accent)
+		color: #fff
+		border-radius: 1.5rem
+		padding: 5rem
+		gap: 5rem
+	&__text
+		font-size: 2rem
+		max-width: 47.375rem
+		+light
+		p
+			margin-bottom: 2rem
+			&:last-child
+				margin: 0
+		span
+			+bold
+
+@media screen and ( max-width: 992px )
+	.about-banner
+		&__block
+			flex-direction: column
+			gap: 1.5rem
+
+@media screen and ( max-width: 576px )
+	.about-banner
+		&__block
+			padding: 2rem
+		&__text
+			font-size: 1.5rem
+			p
+				margin-bottom: 1.5rem

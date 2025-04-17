@@ -1,0 +1,147 @@
+.modal-video
+	& .modal
+		&-dialog
+			max-width: 62.5rem
+		&-content
+			background-color: transparent
+			& .btn-close
+				position: absolute
+				top: -6.25rem
+				right: -6.25rem
+				background-image: url(../img/header/burger-close.svg)
+				margin: 0
+				opacity: 1
+				width: 3.1875rem
+				height: 3.1875rem
+				padding: 0
+				background-size: 2rem 2rem
+				background-position: center
+				border: .0625rem solid #fff
+				border-radius: 50%
+				transition: 0.3s ease
+				&:hover
+					background-color: var(--accent)
+					border-color: var(--accent)
+			video
+				width: 100%
+				height: auto
+
+.modal-consult
+	& .modal
+		&-dialog
+			max-width: 36.25rem
+		&-content
+			border-radius: 1.5rem
+			background-color: var(--text)
+			padding: 4rem
+			color: #fff
+			& .btn-close
+				background-image: url(../img/header/burger-close.svg)
+				margin: 0
+				opacity: 1
+				min-width: 3.1875rem
+				height: 3.1875rem
+				padding: 0
+				background-size: 2rem 2rem
+				background-position: center
+				border: .0625rem solid #fff
+				border-radius: 50%
+				transition: 0.3s ease
+				&:hover
+					background-color: var(--accent)
+					border-color: var(--accent)
+		&__group
+			gap: 1.5rem
+		&__text
+			color: rgba(255, 255, 255, 0.5)
+		&__form
+			margin: 2rem 0 0 0
+			& .input-group
+				margin-bottom: 1rem
+				&:last-child
+					margin: 0
+
+.modal-promotion
+	& .modal
+		&__group
+			gap: 3rem
+		&-dialog
+			max-width: 71.25rem
+		&-content
+			border-radius: 1.5rem
+			background-color: var(--text)
+			padding: 4rem
+			color: #fff
+			& .btn-close
+				background-image: url(../img/header/burger-close.svg)
+				margin: 0
+				opacity: 1
+				min-width: 3.1875rem
+				height: 3.1875rem
+				padding: 0
+				background-size: 2rem 2rem
+				background-position: center
+				border: .0625rem solid #fff
+				border-radius: 50%
+				transition: 0.3s ease
+				&:hover
+					background-color: var(--accent)
+					border-color: var(--accent)
+			& .card-room
+				width: 100%
+				max-width: 25rem
+				& .card-name
+					color: var(--text)
+		&__form
+			max-width: 35.25rem
+			width: 100%
+			& .input-group
+				margin-bottom: 1rem
+				&:last-child
+					margin: 0
+	&__text
+		margin-bottom: 2rem
+		color: rgba(255, 255, 255, 0.5)
+		span
+			color: #fff
+	&__content
+		gap: 3rem
+
+@media screen and ( max-width: 992px )
+	.modal-video
+		& .modal
+			&-dialog
+				max-width: 43.75rem
+			&-content
+				& .btn-close
+					top: -4.375rem
+					right: 0
+	.modal-promotion
+		& .modal
+			&-dialog
+				max-width: 43.75rem
+			&-content
+				& .card-room
+					max-width: 100%
+
+@media screen and ( max-width: 576px )
+	.modal-consult
+		& .modal
+			&-dialog
+				max-width: 30rem
+			&-content
+				padding: 2rem
+			&__form
+				margin: 1rem 0 0 0
+	.modal-promotion
+		& .modal
+			&-dialog
+				max-width: 30rem
+			&-content
+				padding: 2rem
+			&__group
+				gap: .5rem
+		&__content
+			gap: 1.5rem
+		&__text
+			margin-bottom: 1.5rem

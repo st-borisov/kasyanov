@@ -1,0 +1,37 @@
+<html>
+
+<head>
+	<title>First story!</title>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+</head>
+
+<body>
+	<amp-story standalone title="Hello Story" publisher="The AMP Team"
+		publisher-logo-src="https://example.com/logo/1x1.png"
+		poster-portrait-src="https://example.com/my-story/poster/3x4.jpg">
+		<amp-story-page id="page-1" auto-advance-after="15s">
+			<amp-story-grid-layer template="fill" preset="2021-background">
+				<amp-img src="https://i.imgur.com/pzSxe2Q.jpeg" layout="fill" alt="">
+				</amp-img>
+			</amp-story-grid-layer>
+			<amp-story-grid-layer template="vertical">
+				<h1 style="font-family: roboto; color: white">Hello, amp-story!</h1>
+			</amp-story-grid-layer>
+		</amp-story-page>
+		<amp-story-page id="page-2" auto-advance-after="10s">
+			<amp-story-grid-layer template="fill" preset="2021-background">
+				<amp-img src="https://i.imgur.com/pzSxe2Q.jpeg" layout="responsive" width="900" height="1600" alt="">
+				</amp-img>
+			</amp-story-grid-layer>
+			<amp-story-grid-layer template="vertical">
+				<h1
+					style="font-family: roboto; color: white; position: absolute; bottom: 0.5em; width: 100%; text-align: center">
+					Hello, my second story!</h1>
+			</amp-story-grid-layer>
+		</amp-story-page>
+	</amp-story>
+
+</body>
+
+</html>
